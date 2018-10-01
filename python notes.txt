@@ -29,3 +29,23 @@ https://www.tutorialspoint.com/python/dictionary_setdefault.htm
 list methods
 join:
 
+divmod
+Python divmod()
+The divmod() method takes two numbers and returns a pair of numbers (a tuple) consisting of their quotient and remainder.
+
+The syntax of divmod() is:
+divmod() Parameters
+The divmod() takes two parameters:
+    x - a non-complex number (numerator)
+    y - a non-complex number (denominator)
+    
+Return Value from divmod()
+
+The divmod() returns
+
+    (q, r) - a pair of numbers (a tuple) consisting of quotient q and remainder r
+
+If x and y are integers, the return value from divmod() is same as (a // b, x % y).
+
+If either x or y is a float, the result is (q, x%y). Here, q is the whole part of the quotient
+
