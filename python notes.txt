@@ -2,9 +2,11 @@ Python - string methods like
 find(ch)---returns first index, 
 rfind(ch) --- returns highest index of ch,
 replace
-split method
+split()
 
-collections - OrderedDict, Counter, 
+collections - 
+OrderedDict, 
+Counter, 
 
 itertools.takewhile, 
 itertools.chain, 
