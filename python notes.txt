@@ -1,5 +1,29 @@
-Python - string methods like find(ch)---returns first index, rfind(ch) --- returns highest index of ch,collections - OrderedDict, Counter, itertools.takewhile, itertools.chain, ,itertools next function, map, filter, functools reduce,ord and chr functions, bitwise operators, xor, zip function, * unpacks the sequence/collection into positional arguments, pandas 
+Python - string methods like 
+find(ch)---returns first index, 
+rfind(ch) --- returns highest index of ch,
+replace
+split method
 
-Python dictionary setdefault() Method
+collections - OrderedDict, Counter, 
+
+itertools.takewhile, 
+itertools.chain, 
+itertools next function,
+
+map, 
+filter, 
+functools reduce,
+
+ord and chr functions,
+
+bitwise operators, xor, zip function, * unpacks the sequence/collection into positional arguments, pandas 
+
+
+Python dictionary 
+setdefault() Method
+get() method
 https://www.tutorialspoint.com/python/dictionary_setdefault.htm
+
+list methods
+join:
 
