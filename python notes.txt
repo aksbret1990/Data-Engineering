@@ -122,3 +122,45 @@ All values are false 	False
 One value is true (others are false) 	False
 One value is false (others are true) 	False
 Empty Iterable 	True
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+In Python, a string of text can be aligned left, right and center.
+
+.ljust(width)
+
+This method returns a left aligned string of length width.
+
+>>> width = 20
+>>> print 'HackerRank'.ljust(width,'-')
+HackerRank----------  
+
+.center(width)
+
+This method returns a centered string of length width.
+
+>>> width = 20
+>>> print 'HackerRank'.center(width,'-')
+-----HackerRank-----
+
+.rjust(width)
+
+This method returns a right aligned string of length width.
+
+>>> width = 20
+>>> print 'HackerRank'.rjust(width,'-')
+----------HackerRank
