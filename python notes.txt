@@ -49,3 +49,12 @@ If x and y are integers, the return value from divmod() is same as (a // b, x % 
 
 If either x or y is a float, the result is (q, x%y). Here, q is the whole part of the quotient
 
+
+
+
+
+import string
+lower = string.ascii_lowercase
+upper = string.ascii_uppercase
+lower has value 'abcdefghijklmnopqrstuvwxyz'
+upper has value 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
