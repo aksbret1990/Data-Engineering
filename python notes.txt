@@ -58,3 +58,67 @@ lower = string.ascii_lowercase
 upper = string.ascii_uppercase
 lower has value 'abcdefghijklmnopqrstuvwxyz'
 upper has value 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+
+
+
+
+Python any()
+The any() method returns True if any element of an iterable is True. If not, any() returns False.
+
+The syntax of any() is:
+
+any(iterable)
+
+any() Parameters
+
+The any() method takes an iterable (list, string, dictionary etc.) in Python.
+Return Value from any()
+
+any() returns:
+
+    True if at least one element of an iterable is true
+    False if all elements are false or if an iterable is empty
+
+When 	Return Value
+All values are true 	True
+All values are false 	False
+One value is true (others are false) 	True
+One value is false (others are true) 	True
+Empty Iterable 	False
+
+
+
+
+
+
+
+
+
+
+Python all()
+The all() method returns True when all elements in the given iterable are true. If not, it returns False.
+
+The syntax of all() method is:
+
+all(iterable)
+
+all() Parameters
+
+The all() method takes a single parameter:
+
+    iterable - any iterable (list, tuple, dictionary, etc.) which contains the elements
+
+Return Value from all()
+
+The all() method returns:
+
+    True - If all elements in an iterable are true
+    False - If any element in an iterable is false
+
+Truth table for all() When 	Return Value
+All values are true 	True
+All values are false 	False
+One value is true (others are false) 	False
+One value is false (others are true) 	False
+Empty Iterable 	True
