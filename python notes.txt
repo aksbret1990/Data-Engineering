@@ -22,9 +22,104 @@ bitwise operators, xor, zip function, * unpacks the sequence/collection into pos
 
 
 Python dictionary 
+
+
 setdefault() Method
+
+Description
+
+The method setdefault() is similar to get(), but will set dict[key]=default if key is not already in dict.
+Syntax
+
+Following is the syntax for setdefault() method −
+
+dict.setdefault(key, default=None)
+
+Parameters
+
+    key − This is the key to be searched.
+
+    default − This is the Value to be returned in case key is not found.
+
+Return Value
+
+This method returns the key value available in the dictionary and if given key is not available then it will return provided default value.
+Example
+
+The following example shows the usage of setdefault() method.
+
+
+#!/usr/bin/python
+
+dict = {'Name': 'Zara', 'Age': 7}
+print "Value : %s" %  dict.setdefault('Age', None)
+print "Value : %s" %  dict.setdefault('Sex', None)
+
+When we run above program, it produces following result −
+
+Value : 7
+Value : None
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 get() method
-https://www.tutorialspoint.com/python/dictionary_setdefault.htm
+
+Get() method for dictionaries in Python
+
+In python dictionaries, following is a conventional method to access a value for a key.
+dic = {"A":1, "B":2} 
+print(dic["A"]) 
+print(dic["C"]) 
+
+The problem that arises here is that the 3rd line of the code returns a key error :
+
+Traceback (most recent call last):
+  File ".\dic.py", line 3, in 
+    print (dic["C"])
+KeyError: 'C'
+
+The get() method is used to avoid such situations. This method returns the value for the given key, if present in the dictionary. If not, then it will return None (if get() is used with only one argument).
+
+Syntax :
+
+Dict.get(key, default=None)
+
+
+Example:
+dic = {"A":1, "B":2} 
+print(dic.get("A")) 
+print(dic.get("C")) 
+print(dic.get("C","Not Found ! ")) 
+
+Output:
+
+1
+None
+Not Found !
+
+
+
+
 
 list methods
 join:
