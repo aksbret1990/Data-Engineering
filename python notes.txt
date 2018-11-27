@@ -1,9 +1,11 @@
 Python - string methods like 
 
-find(ch)---returns first index,
+find(ch)---returns first index
 https://www.programiz.com/python-programming/methods/string/find
 
-rfind(ch) --- returns highest index of ch,
+rfind(ch) --- returns highest index of ch
+https://www.programiz.com/python-programming/methods/string/rfind
+
 replace
 split()
 
