@@ -1,0 +1,57 @@
+/**
+ * Welcome to the SQL editor
+ * =========================
+ * 
+ * The SQL code you write here will continuously transform your streaming data
+ * when your application is running.
+ *
+ * Get started by clicking "Add SQL from templates" or pull up the
+ * documentation and start writing your own custom queries.
+ */
+
+create or replace stream "DESTINATION_SQL_STREAM"(
+customer_id integer,
+ip_address varchar(16),
+device_type varchar(8),
+router_mac_address varchar(32),
+device_name varchar(16),
+website_url varchar(256),
+app_name varchar(8),
+is_app_flag varchar(4),
+is_downloaded_flag varchar(4),
+data_size integer,
+is_live_streaming varchar(4),
+COL_date varchar(16),
+COL_time varchar(32),
+PARTITION_KEY varchar(512),
+SEQUENCE_NUMBER varchar(128),
+SHARD_ID varchar(64),
+APPROXIMATE_ARRIVAL_TIME timestamp
+);
+
+
+
+create or replace pump "STREAM_PUMP" as 
+insert into "DESTINATION_SQL_STREAM"
+SELECT 
+"customer_id",
+"ip_address" ,
+"device_type" ,
+"router_mac_address" ,
+"device_name" ,
+"website_url",
+"app_name" ,
+"is_app_flag" ,
+"is_downloaded_flag" ,
+"data_size",
+"is_live_streaming" ,
+"COL_date" ,
+"COL_time" ,
+"PARTITION_KEY",
+"SEQUENCE_NUMBER" ,
+"SHARD_ID" ,
+"APPROXIMATE_ARRIVAL_TIME"
+from "SOURCE_SQL_STREAM_001"
+;
+
+
